@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        header p {
+            margin: 10px 0;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        section h2 {
+            text-align: center;
+        }
+
+        .project {
+            margin: 20px 0;
+        }
+
+        .project img {
+            width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+     
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:20%;
+    height:10%;
+}
+.circle-button {
+      position: relative;
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-color: #5c5a5d;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .circle-button::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: conic-gradient(white 0% 30%, #3498db 30% 70%, white 70% 100%);
+      opacity: 0.3;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    p {
+      margin: 5px 0 0;
+      font-size: 18px;
+    }
+
+    header nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        header button.nav-button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        header button.nav-button:hover {
+            background-color: #555;
+        }
+    </style>
+    <title>Portfolio</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DRISHYA</h1>
+            <p>Web Developer</p>
+
+            <nav>
+                <button class="nav-button" onclick="scrollToSection('about')">About</button>
+                <button class="nav-button" onclick="scrollToSection('skills')">Skills</button>
+                <button class="nav-button" onclick="scrollToSection('contact')">contact</button>
+                
+            </nav>
+        </header>
+        </header>
+
+        <section id="about">
+            <h2>About me</h2>
+            <p>Hi ,Myself Drishya Dinoj.R,</p><p> I am an undergraduate<p>in computer science and engineering.</p><p>I am a beginner in web development and designing.</p>
+            <div class="image">
+                <img src="InShot_20231202_234528706.png" alt="profile"  height="10%" width="20%" class="center">
+              </div>
+        </section>
+        <section id="skills">
+<h4>SKILLS</h4>
+        <div class="circle-button">
+    <h2>HTML</h2>
+    <p>50%</p>
+  </div><br>
+  
+  <div class="circle-button">
+    <h2>CSS</h2>
+    <p>50%</p>
+  </div><br>
+  
+  <div class="circle-button">
+    <h2>BOOTSTRAP</h2>
+    <p>45%</p>
+  </div><br>
+  
+  <div class="circle-button">
+    <h2>JS</h2>
+    <p>30%</p>
+  </div><br>
+</section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p><a href="https://www.linkedin.com/in/drishya-dinoj-r-45744325a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn: linkedin.com/in/drishya-dinoj-r</a></p>
+            <p>LinkedIn: linkedin.com/in/drishya-dinoj-r</p>
+            <p><a href="https://www.gmail.com/in/drishyadinojr1824@gmail.com">Email: drishyadinojr1824@gmail.com</a></p>
+            <p>Email: drishyadinojr1824@gmail.com</p>
+            <p><a href="https://github.com/drishyadr">GitHub:drishyadr</a></p>
+            <p>GitHub:drishyadr</p>
+        </section>
+        
+
+       
+
+
+        <footer>
+            <p>&copy; 2023 Drishya. All rights reserved.</p>
+        </footer>
+    </div>
+   
+
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
+
+</body>
+</html>
+
